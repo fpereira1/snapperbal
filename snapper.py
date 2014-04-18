@@ -9,7 +9,7 @@ from BeautifulSoup import BeautifulSoup
 
 locale.setlocale(locale.LC_ALL, 'en_NZ.UTF-8')
 
-__version__ = '1.1'
+__version__ = '1.1.1'
 
 def main():
 
