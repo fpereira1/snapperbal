@@ -1,22 +1,11 @@
 snapperbal
 ==========
 
-Your Snapper balance from the command line
-
-To run `python main.py`
+Snapper balance from the confort of your terminal
 
 ![tool screenshot](https://raw.github.com/fpereira1/snapperbal/master/screenshot.png)
 
-Requirements
+Installation
 ------------
-* BeautifulSoup
 
-  See more [here](http://www.crummy.com/software/BeautifulSoup/). You can also run:
-
-  `easy_install beautifulsoup`
-
-* prettytable
-
-  See more [here](https://code.google.com/p/prettytable/). As with BeautifulSoup, you can use easy_install to install the library. Like so:
-
-  `easy_install prettytable`
+`sudo python setup.py install`
