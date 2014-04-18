@@ -9,20 +9,21 @@ from BeautifulSoup import BeautifulSoup
 
 locale.setlocale(locale.LC_ALL, 'en_NZ.UTF-8')
 
-__version__ = '0.2'
+__version__ = '1.1'
 
 def main():
-    print "To use this tool you must have your cards registered at %s" % ('www.snapper.co.nz')
 
-    p = optparse.OptionParser()
+    p = optparse.OptionParser(usage="%prog [-e]", version="%prog "+__version__)
     p.add_option('--email', '-e')
     options, arguments = p.parse_args()
+
     if options.email:
         email = options.email
     else:
         email = raw_input("Email: ")
     passwd = getpass.getpass("Password: ")
 
+    print "To use this tool you must have your cards registered at %s" % ('www.snapper.co.nz')
     print '\033[91m' + "Looking for your Snapper balance..." + '\033[0m'
     print "Your balance may be different from the actual Snapper balance"
 

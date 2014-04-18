@@ -1,19 +1,21 @@
 import os
 import sys
 from setuptools import setup, find_packages
+from snapper import __version__
 
 description = "Snapper balance from the confort of your terminal"
 
 setup(
     name = "snapperbal",
-    version = "1.0",
+    version = __version__,
     url = 'http://example.org/',
     license = 'BSD',
     description = description,
     long_description = description,
     author = 'Filype Pereira',
     author_email = 'pereira.filype@gmail.com',
-    packages = find_packages('.'),
+    # packages = find_packages('.'),
+    py_modules=['snapper'],
     package_dir = {'': '.'},
     install_requires = ['prettytable', 'BeautifulSoup'],
     entry_points= {'console_scripts': [

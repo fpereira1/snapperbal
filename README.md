@@ -8,4 +8,8 @@ Snapper balance from the confort of your terminal
 Installation
 ------------
 
-`sudo python setup.py install`
+Instalation is done via pip or easy_install
+
+`pip install snapperbal`
+
+`easy_install snapperbal`
